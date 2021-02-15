@@ -1,21 +1,29 @@
-# Example app with MDX
+# Markdown previewer
 
-This example shows using [MDX](https://github.com/mdx-js/mdx) as top level pages for your next.js app.
+Handy when drafting some hot new thing. Even helpful editing tepid older things.
 
-## Deploy your own
+`yarn dev` starts the server
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+`$EDITOR pages/new-piece-of-lightning-fire.md`
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-mdx&project-name=with-mdx&repository-name=with-mdx)
+In your favorite browser, navigate to `localhost:3000/new-piece-of-lightning-fire`
 
-## How to use
+Hot reloading will update the browser page on every save.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+# What
 
-```bash
-npx create-next-app --example with-mdx with-mdx-app
-# or
-yarn create next-app --example with-mdx with-mdx-app
-```
+Built on [with-mdx](https://github.com/vercel/next.js/tree/canary/examples/with-mdx), this project adds basic styles, mimicking github's look & feel. It supports (limited) code block syntax highlighting courtesy of [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer) and callout blocks courtesy of [remark-admonitions](https://github.com/elviswolcott/remark-admonitions)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+# Why
+
+I have been completely corrupted. Vim or bust. If I can't write in Vim, I sob. Gnash my teeth. In general, wallow in despair. I also, though, want pretty, stylized output & previews.
+
+Last week, I would spam commits, refreshing Github's markdown viewer, pushing a new `git commit -m "oops small tweak` every 42 seconds. Rinse & repeat. It was excessive.
+
+Now, I throw vim on half my screen, a browser on the other half, and happily type-tap my way to (hopeful) coherence, previewing my draft _before_ pushing up commits, tinkering & editing to my heart's content.
+
+## Ready-made Alternatives
+
+- [dillinger.io](https://dillinger.io/)
+- [Bear](https://bear.app/)
+- [iA Writer](https://ia.net/writer)
