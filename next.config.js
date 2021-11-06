@@ -5,7 +5,6 @@ const withMDX = require('@next/mdx')({
       [require('remark-prism'), {}],
       [require('remark-admonitions'), {}],
     ],
-    rehypePlugins: [],
   },
 });
 module.exports = withMDX({

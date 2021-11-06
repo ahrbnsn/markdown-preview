@@ -1,10 +1,12 @@
 {
-  "name": "with-mdx",
+  "name": "markdown-preview",
   "version": "1.0.1",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "addTOC": "yarn markdown-toc -i",
+    "printTOC": "yarn markdown-toc"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.5.1",
@@ -17,5 +19,12 @@
     "remark-admonitions": "^1.2.1",
     "remark-prism": "^1.3.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-toc": "^1.2.0",
+    "chalk": "^4.1.0",
+    "chokidar": "^3.5.1",
+    "commander": "^7.1.0",
+    "cpy": "^8.1.1"
+  }
 }
